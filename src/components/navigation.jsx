@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import './../App.css';
 
 export const Navigation = (props) => {
   return (
@@ -18,7 +20,6 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
           </a>{" "}
         </div>
 
@@ -28,21 +29,21 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
+              <a href="#header" className="page-scroll">
+                Nosotros
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
-                About
+              <a href="#insurance" className="page-scroll">
+                Seguros
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
-                Services
+              <a href="#finance" className="page-scroll">
+                Finanzas
               </a>
             </li>
-            <li>
+            {/*<li>
               <a href="#portfolio" className="page-scroll">
                 Gallery
               </a>
@@ -56,7 +57,7 @@ export const Navigation = (props) => {
               <a href="#team" className="page-scroll">
                 Team
               </a>
-            </li>
+            </li>*/}
             <li>
               <a href="#contact" className="page-scroll">
                 Contact

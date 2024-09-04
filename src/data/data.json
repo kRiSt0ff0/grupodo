@@ -1,7 +1,9 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title1": "Quiénes \n somos",
+    "paragraph1": "Un despacho especializado en el servicio de consultoría de seguro y fianzas que nace en Guadalajara, Jalisco en el año 2015",
+    "title2": "Nuestra \n misión",
+    "paragraph2": "Ganar la confianza de nuestros clientes brindando un servicio personalizado, siempre basados en la ética profesional y honestidad."
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -152,7 +154,7 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "Efraín González Luna 2481 Int. 202 Col. Arcos Sur C.P. 44150 Guadalajara, Jalisco; México. ",
     "phone": "+1 123 456 1234",
     "email": "info@company.com",
     "facebook": "fb.com",
@@ -179,6 +181,45 @@
       "icon": "fa fa-magic",
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Offer": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Confidence": [
+    {
+      "icon": "",
+      "title": "",
+      "text": ""
+    }
+  ],
+  "Insurance": [
+    {
+      "icon": "",
+      "title": "",
+      "text": ""
+    }
+  ],
+  "Ramos": [
+    {
+      "img": "img/ramos/life.jpg",
+      "name": "Vida"
+    },
+    {
+      "img": "img/ramos/bills.jpg",
+      "name": "Gastos Médicos Mayores"
+    },
+    {
+      "img": "img/ramos/damage.jpg",
+      "name": "Daños y/o patrimoniales"
+    },
+    {
+      "img": "img/ramos/accident.jpg",
+      "name": "Accidentes y Enfermedades"
     }
   ]
 }

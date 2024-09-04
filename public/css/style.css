@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -11,7 +11,7 @@ html {
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h2 {
   text-transform: uppercase;
@@ -81,14 +81,13 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
+  background-image: url('../img/logo_do.svg'); /* Ajusta la ruta según la ubicación del archivo CSS */
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   color: #555;
   font-size: 15px;
@@ -163,7 +162,7 @@ hr {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
@@ -208,7 +207,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/fondo.png) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -219,7 +218,7 @@ a:focus,
   background: rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 82px;
   font-weight: 700;
@@ -229,25 +228,45 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: #fff;
+  line-height: 3.5rem;
 }
 .intro p {
   color: #fff;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 20px;
   margin: 0 auto;
-  margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
-  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  
 }
+
+.title-box {
+  background-color: rgb(1 60 120 / 75%);/* Ajusta el color de fondo según sea necesario */
+  width: 50vw; /* 50% del ancho de la pantalla */
+  padding: 80px; /* Espacio interno, ajusta según sea necesario */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.paragraph-box {
+  padding-right: 200px;
+  display: flex;
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+}
+
 /* Features Section */
 #features {
-  background: #f6f6f6;
+  margin: 100px 0;
+  background-image: url('../img/do.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
@@ -260,6 +279,92 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+
+/* Offers Section */
+#offer {
+  margin: 100px 0;
+  background-image: url('../img/do.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Confidence Section */
+.confidence {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Ramos Section */
+#ramos {
+  padding: 100px 0;
+}
+
+#ramos{
+  background-image: url('../img/ramos.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ramos h3 {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+#ramos h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#ramos h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 42%;
+}
+#ramos .ramos-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#ramos .ramos-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5ca9fb;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+
+.ramos-container {
+  row-gap: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ramos-image,
+.ramos-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+#ramos p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
 /* About Section */
 #about {
   padding: 100px 0;
