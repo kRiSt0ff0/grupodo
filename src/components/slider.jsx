@@ -1,7 +1,7 @@
 // src/Slider.js
 import React, { useState, useEffect } from 'react';
 
-const Slider = ({ slides }) => {  // Recibe slides como prop
+const Slider = ({ slides }) => {  // Recibe slides como props
   const [currentIndex, setCurrentIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
