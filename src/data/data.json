@@ -21,10 +21,45 @@
     ]
   },
 
-  "Types": {
-    "title3": "Tipos de seguros: \n para bienes muebles e inmuebles",
-    "paragraph3": "Un despacho especializado en el servicio de consultoría de seguro y fianzas que nace en Guadalajara, Jalisco en el año 2015"
-  },
+  "Types": [
+      {
+      "title3": "Tipos de seguros: \n para bienes muebles e inmuebles",
+      "paragraph3": "Un despacho especializado en el servicio de consultoría de seguro y fianzas que nace en Guadalajara, Jalisco en el año 2015"
+      },
+      {
+        "name": "01",
+        "text": "Autos, motocicletas y camiones"
+      },
+      {
+        "name": "02",
+        "text": "Seguros hombre clave, ppr (Plan para el retiro), educacionales y gastos médicos mayores"
+      },
+      {
+        "name": "03",
+        "text": "Transporte de mercancía terrestre, marítima y aérea"
+      },
+      {
+        "name": "04",
+        "text": "Seguros empresariales todo riesgo"
+      },
+      {
+        "name": "05",
+        "text": "Seguros de responsabilidad civil: construcción, profesional (médicos), ambiental"
+      },
+      {
+        "name": "06",
+        "text": "Seguros de obra civil"
+      },
+      {
+        "name": "07",
+        "text": "Seguros diversos (rotura de maquinaria, equipo de contratista, equipo electrónico)"
+      },
+      {
+        "name": "08",
+        "text": "Seguros especializados (cascos de avión, buque, seguros agropecuarios, obras de arte)"
+      }
+  ],
+    
 
   "Gallery": [
     {

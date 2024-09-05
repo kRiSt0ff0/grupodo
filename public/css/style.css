@@ -336,6 +336,8 @@ header .intro-text {
 
 .insurance h2 {
   color: #fff;
+  margin-top: 35%;
+  font-size: 5.5rem;
 }
 
 .insurance {
@@ -755,18 +757,19 @@ label {
 
 
 /* Types Section */
-
-.types {
-  height: 30vw;
-  display: table;
-  width: 100%;
-  padding: 0;
-  background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+#types {
+  background-color: #F5F5F5;
 }
+
+.types-container {
+  height: 20vh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+}
+
 .types .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -783,8 +786,14 @@ label {
   font-weight: 800;
   line-height: 3.5rem;
 }
+.types h3 {
+  padding: 0;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1E4D7C;
+    margin: 0 !important;
+}
 .types p {
-  color: #fff;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
