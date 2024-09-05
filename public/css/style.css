@@ -247,7 +247,7 @@ header .intro-text {
 .title-box {
   background-color: rgb(1 60 120 / 75%);/* Ajusta el color de fondo según sea necesario */
   width: 50vw; /* 50% del ancho de la pantalla */
-  padding: 80px; /* Espacio interno, ajusta según sea necesario */
+  padding: 200px 100px; /* Espacio interno, ajusta según sea necesario */
   box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
@@ -290,7 +290,55 @@ header .intro-text {
 }
 
 /* Confidence Section */
+
+#confidence{
+  background-image: url('../img/confianza.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vw;
+}
+
+.container.confidence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.confidence h2 {
+  color: #fff;
+}
+
 .confidence {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Insurance Section */
+
+#insurance{
+  background-image: url('../img/seguros.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vw;
+}
+
+.container.insurnce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.insurance h2 {
+  color: #fff;
+}
+
+.insurance {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -303,8 +351,9 @@ header .intro-text {
 }
 
 #ramos{
-  background-image: url('../img/ramos.jpg');
-    background-size: contain;
+  width: 100%;
+  background-image: url('../img/ramos.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -703,6 +752,169 @@ label {
 #footer a:hover {
   border-bottom: 2px solid #608dfd;
 }
+
+
+/* Types Section */
+
+.types {
+  height: 30vw;
+  display: table;
+  width: 100%;
+  padding: 0;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.types .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.types h1 {
+  font-family: "Poppins", sans-serif;
+  color: #1E4D7C;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.types h1 span {
+  font-weight: 800;
+  line-height: 3.5rem;
+}
+.types p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.types .types-text {
+  padding-top: 80px;
+  padding-bottom: 0px;
+  
+}
+
+
+/* Rinsurance Section */
+#rinsurance {
+  padding: 100px 0;
+  background: #7D7E82;
+  color: #fff;
+}
+#rinsurance .service-desc {
+  margin: 10px 10px 20px;
+}
+#rinsurance h2 {
+  color: #fff;
+}
+#rinsurance .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#rinsurance i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#rinsurance h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#rinsurance p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#rinsurance .service-desc {
+  margin-bottom: 40px;
+}
+
+/* Slider logos */
+
+/* Archivo CSS Completo */
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  width: 20%;
+  /*display: flex;*/
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  padding: 0px;
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.slider-content {
+  display: flex;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.slider-button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+
+  .slider-button {
+    font-size: 20px;
+  }
+
+  .pagination-bullet {
+    font-size: 18px;
+  }
+}
+
 
 @media (max-width: 768px) {
   #about img {

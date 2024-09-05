@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import { Offer } from "./components/offer";
-import { Confidence } from "./components/confidence"
-import { Insurance } from "./components/insurance"
-import { Ramos } from "./components/ramos"
+import { Confidence } from "./components/confidence";
+import { Insurance } from "./components/insurance";
+import { Ramos } from "./components/ramos";
+import { Types } from "./components/types";
+import { Rinsurance } from "./components/rinsurance";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -31,8 +31,8 @@ const App = () => {
       <Confidence data={landingPageData.Confidence} />
       <Insurance data={landingPageData.Insurance} />
       <Ramos data={landingPageData.Ramos} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
+      <Types data={landingPageData.Types} />
+      <Rinsurance data={landingPageData.Rinsurance} />
       <Contact data={landingPageData.Contact} />
     </div>
   );

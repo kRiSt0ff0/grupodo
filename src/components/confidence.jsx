@@ -4,7 +4,9 @@ export const Confidence = (props) => {
   return (
     <div id="confidence" className="text-center row">
       <div className="container confidence">
-        <img src="../img/confianza.jpg" alt="confidence"></img>
+        <div className="section-title">
+          <h2>Confianza a tu lado siempre</h2>
+        </div>
       </div>
     </div>
   );
