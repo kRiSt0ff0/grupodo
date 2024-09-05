@@ -20,10 +20,6 @@ const Slider = ({ slides }) => {  // Recibe slides como prop
     setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index + 1); // Ajuste para la clonación
-  };
-
   // Autoplay effect
   useEffect(() => {
     const interval = setInterval(nextSlide, 3000);
