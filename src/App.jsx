@@ -8,6 +8,7 @@ import { Insurance } from "./components/insurance";
 import { Ramos } from "./components/ramos";
 import { Types } from "./components/types";
 import { Rinsurance } from "./components/rinsurance";
+import { Finance } from "./components/finance";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import WhatsAppButton from './components/WhatsAppButton';
@@ -34,6 +35,7 @@ const App = () => {
       <Ramos data={landingPageData.Ramos} />
       <Types data={landingPageData.Types} />
       <Rinsurance data={landingPageData.Rinsurance} />
+      <Finance data={landingPageData.Finance} />
       <Contact data={landingPageData.Contact} />
       <WhatsAppButton />
     </div>

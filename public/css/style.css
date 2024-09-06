@@ -347,6 +347,36 @@ header .intro-text {
   padding: 0;
 }
 
+/* Finance Section */
+
+#finance{
+  background-image: url('../img/finance.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vw;
+}
+
+.container.finance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.finance h2 {
+  color: #fff;
+  margin-top: 35%;
+  font-size: 5.5rem;
+}
+
+.finance {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 /* Ramos Section */
 #ramos {
   padding: 100px 0;
