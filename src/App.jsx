@@ -13,9 +13,8 @@ import { Oservices } from "./components/oservices";
 import { Rfinance } from "./components/rfinance";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
-import WhatsAppButton from './components/WhatsAppButton';
+import WhatsAppButton from "./components/WhatsAppButton";
 import "./App.css";
-
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,

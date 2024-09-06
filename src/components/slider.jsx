@@ -1,16 +1,13 @@
 // src/Slider.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-const Slider = ({ slides }) => {  // Recibe slides como props
+const Slider = ({ slides }) => {
+  // Recibe slides como props
   const [currentIndex, setCurrentIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
   // Clonamos el último slide al principio y el primero al final para un efecto infinito
-  const extendedSlides = [
-    slides[slides.length - 1],
-    ...slides,
-    slides[0]
-  ];
+  const extendedSlides = [slides[slides.length - 1], ...slides, slides[0]];
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -53,7 +50,7 @@ const Slider = ({ slides }) => {  // Recibe slides como props
           className="slider-content"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
-            transition: isTransitioning ? 'transform 0.3s ease' : 'none'
+            transition: isTransitioning ? "transform 0.3s ease" : "none",
           }}
         >
           {extendedSlides.map((slide, index) => (
