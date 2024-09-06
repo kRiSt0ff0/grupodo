@@ -327,7 +327,7 @@ header .intro-text {
     height: 40vw;
 }
 
-.container.insurnce {
+.container.insurance {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,9 +335,13 @@ header .intro-text {
 }
 
 .insurance h2 {
-  color: #fff;
-  margin-top: 35%;
-  font-size: 5.5rem;
+  text-align: center;
+    color: #fff;
+    font-size: 5.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .insurance {
@@ -365,9 +369,13 @@ header .intro-text {
 }
 
 .finance h2 {
-  color: #fff;
-  margin-top: 35%;
-  font-size: 5.5rem;
+  text-align: center;
+    color: #fff;
+    font-size: 5.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .finance {
