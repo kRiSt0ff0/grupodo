@@ -9,6 +9,7 @@ import { Ramos } from "./components/ramos";
 import { Types } from "./components/types";
 import { Rinsurance } from "./components/rinsurance";
 import { Finance } from "./components/finance";
+import { Oservices } from "./components/oservices";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import WhatsAppButton from './components/WhatsAppButton';
@@ -36,6 +37,7 @@ const App = () => {
       <Types data={landingPageData.Types} />
       <Rinsurance data={landingPageData.Rinsurance} />
       <Finance data={landingPageData.Finance} />
+      <Oservices data={landingPageData.Oservices} />
       <Contact data={landingPageData.Contact} />
       <WhatsAppButton />
     </div>
