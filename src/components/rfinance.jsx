@@ -11,7 +11,7 @@ export const Rfinance = (props) => {
           <h2>Afianzadoras con las que trabajamos</h2>
         </div>
         <div className="slider-container">
-        <Slider slides={data.Rfinance} />
+          <Slider slides={data.Rfinance} />
         </div>
       </div>
     </div>
