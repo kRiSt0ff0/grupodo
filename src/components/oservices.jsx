@@ -31,7 +31,7 @@ export const Oservices = (props) => {
                               <FontAwesomeIcon
                                 icon={faCheck}
                                 size="1x"
-                                style={{ marginRight: "8px", color: "#1E4D7C" }} // Estiliza el ícono
+                                style={{ marginRight: "8px", color: "#1E4D7C" }} // Estiliza el ícon
                               />
                               {d.text && <p className="service-text">{d.text}</p>}
                             </div>
