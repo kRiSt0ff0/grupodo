@@ -262,7 +262,7 @@
       "name": "Accidentes y Enfermedades"
     }
   ],
-  "Finance": [
+  "Rfinance": [
     { "id": 1, "img": "./img/finance/f-12.svg", "alt": "Logo 1" },
     { "id": 2, "img": "./img/finance/f-13.svg", "alt": "Logo 2" },
     { "id": 3, "img": "./img/finance/f-14.svg", "alt": "Logo 3" },

@@ -224,6 +224,19 @@ a:focus,
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .intro h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
 .intro h1 span {
   font-weight: 800;
   color: #fff;
@@ -236,6 +249,18 @@ a:focus,
   line-height: 20px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .intro p {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 auto;
+  }
+}
+
 header .intro-text {
   padding-top: 80px;
   padding-bottom: 0px;
@@ -886,6 +911,52 @@ label {
 #rinsurance .service-desc {
   margin-bottom: 40px;
 }
+
+
+/* Rfinance Section */
+#rfinance {
+  padding: 100px 0;
+  background: #7d7e82;
+  color: #fff;
+}
+#rfinance .service-desc {
+  margin: 10px 10px 20px;
+}
+#rfinance h2 {
+  color: #fff;
+}
+#rfinance .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#rfinance i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#rfinance h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#rfinance p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#rfinance .service-desc {
+  margin-bottom: 40px;
+}
+
 
 /* Oservices Section */
 #oservices {

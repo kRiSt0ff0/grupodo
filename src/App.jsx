@@ -10,10 +10,12 @@ import { Types } from "./components/types";
 import { Rinsurance } from "./components/rinsurance";
 import { Finance } from "./components/finance";
 import { Oservices } from "./components/oservices";
+import { Rfinance } from "./components/rfinance";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import WhatsAppButton from './components/WhatsAppButton';
 import "./App.css";
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -38,6 +40,7 @@ const App = () => {
       <Rinsurance data={landingPageData.Rinsurance} />
       <Finance data={landingPageData.Finance} />
       <Oservices data={landingPageData.Oservices} />
+      <Rfinance data={landingPageData.Rfinance} />
       <Contact data={landingPageData.Contact} />
       <WhatsAppButton />
     </div>
