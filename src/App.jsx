@@ -10,6 +10,7 @@ import { Types } from "./components/types";
 import { Rinsurance } from "./components/rinsurance";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import WhatsAppButton from './components/WhatsAppButton';
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -34,6 +35,7 @@ const App = () => {
       <Types data={landingPageData.Types} />
       <Rinsurance data={landingPageData.Rinsurance} />
       <Contact data={landingPageData.Contact} />
+      <WhatsAppButton />
     </div>
   );
 };
