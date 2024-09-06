@@ -14,6 +14,6 @@ export const Rfinance = (props) => {
           <Slider slides={data.Rfinance} />
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
