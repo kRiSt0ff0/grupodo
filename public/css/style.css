@@ -58,8 +58,6 @@ ol {
 ul,
 ol {
   padding: 0;
-  /*webkit-padding: 0;
-  moz-padding: 0;*/
 }
 hr {
   height: 2px;
@@ -81,7 +79,7 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  background-image: url('../img/logo_do.svg'); /* Ajusta la ruta según la ubicación del archivo CSS */
+  background-image: url("../img/logo_do.svg"); /* Ajusta la ruta según la ubicación del archivo CSS */
   width: 200px; /* Ajusta el tamaño según sea necesario */
   background-size: contain;
   background-repeat: no-repeat;
@@ -241,11 +239,12 @@ a:focus,
 header .intro-text {
   padding-top: 80px;
   padding-bottom: 0px;
-  
 }
 
 .title-box {
-  background-color: rgb(1 60 120 / 75%);/* Ajusta el color de fondo según sea necesario */
+  background-color: rgb(
+    1 60 120 / 75%
+  ); /* Ajusta el color de fondo según sea necesario */
   width: 50vw; /* 50% del ancho de la pantalla */
   padding: 200px 100px; /* Espacio interno, ajusta según sea necesario */
   box-sizing: border-box; /* Incluye el padding en el ancho total */
@@ -261,10 +260,10 @@ header .intro-text {
 /* Features Section */
 #features {
   margin: 100px 0;
-  background-image: url('../img/do.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../img/do.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #features i.fa {
@@ -283,20 +282,20 @@ header .intro-text {
 /* Offers Section */
 #offer {
   margin: 100px 0;
-  background-image: url('../img/do.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../img/do.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Confidence Section */
 
-#confidence{
-  background-image: url('../img/confianza.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40vw;
+#confidence {
+  background-image: url("../img/confianza.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vw;
 }
 
 .container.confidence {
@@ -319,12 +318,12 @@ header .intro-text {
 
 /* Insurance Section */
 
-#insurance{
-  background-image: url('../img/seguros.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40vw;
+#insurance {
+  background-image: url("../img/seguros.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vw;
 }
 
 .container.insurance {
@@ -336,12 +335,12 @@ header .intro-text {
 
 .insurance h2 {
   text-align: center;
-    color: #fff;
-    font-size: 5.5rem;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  color: #fff;
+  font-size: 5.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .insurance {
@@ -353,12 +352,12 @@ header .intro-text {
 
 /* Finance Section */
 
-#finance{
-  background-image: url('../img/finance.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40vw;
+#finance {
+  background-image: url("../img/finance.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vw;
 }
 
 .container.finance {
@@ -370,12 +369,12 @@ header .intro-text {
 
 .finance h2 {
   text-align: center;
-    color: #fff;
-    font-size: 5.5rem;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  color: #fff;
+  font-size: 5.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .finance {
@@ -390,12 +389,12 @@ header .intro-text {
   padding: 100px 0;
 }
 
-#ramos{
+#ramos {
   width: 100%;
-  background-image: url('../img/ramos.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../img/ramos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #ramos h3 {
@@ -586,7 +585,8 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
-  /*-webkit-backface-visibility: hidden;
+  backface-visibility: hidden; /* Propiedad estándar */
+  -webkit-backface-visibility: hidden; /* Prefijo para compatibilidad con navegadores más antiguos */
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -793,10 +793,9 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 
-
 /* Types Section */
 #types {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .types-container {
@@ -813,7 +812,7 @@ label {
 }
 .types h1 {
   font-family: "Poppins", sans-serif;
-  color: #1E4D7C;
+  color: #1e4d7c;
   font-size: 82px;
   font-weight: 700;
   text-transform: uppercase;
@@ -827,10 +826,10 @@ label {
 .types h3 {
   text-align: left;
   padding: 0;
-    font-size: 30px;
-    font-weight: 800;
-    color: #1E4D7C;
-    margin: 0 !important;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1e4d7c;
+  margin: 0 !important;
 }
 .types p {
   text-align: left;
@@ -842,14 +841,12 @@ label {
 .types .types-text {
   padding-top: 80px;
   padding-bottom: 0px;
-  
 }
-
 
 /* Rinsurance Section */
 #rinsurance {
   padding: 100px 0;
-  background: #7D7E82;
+  background: #7d7e82;
   color: #fff;
 }
 #rinsurance .service-desc {
@@ -963,7 +960,6 @@ label {
     font-size: 18px;
   }
 }
-
 
 @media (max-width: 768px) {
   #about img {
