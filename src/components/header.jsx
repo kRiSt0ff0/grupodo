@@ -8,7 +8,7 @@ export const Header = (props) => {
     <header id="header">
       <div className="intro">
         <div className="overlay">
-          <div className="container">
+          <div>
             <div className="row">
               <div className="col-md-6 col-md-offset-6 intro-text">
                 {/* Contenedor del primer título con fondo y ancho del 50% */}
