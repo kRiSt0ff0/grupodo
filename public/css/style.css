@@ -679,8 +679,12 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  /*background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  color: rgba(255, 255, 255, 0.75);*/
+  background-image: url("../img/contacto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -689,7 +693,6 @@ header .intro-text {
   font-size: 16px;
 }
 #contact h2 {
-  color: #fff;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -704,7 +707,6 @@ header .intro-text {
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -771,7 +773,6 @@ label {
   margin: 20px 0;
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   display: block;
 }
@@ -793,8 +794,7 @@ label {
   width: 48px;
   height: 48px;
   padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid;
   border-radius: 50%;
   transition: all 0.3s;
 }
