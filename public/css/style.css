@@ -252,12 +252,12 @@ a:focus,
 
 @media (max-width: 768px) {
   .intro p {
-  text-align: center;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 auto;
   }
 }
 
@@ -282,7 +282,7 @@ header .intro-text {
   header .intro-text {
     padding-top: 0;
   }
-  .paragraph-box{
+  .paragraph-box {
     padding-right: 0 !important;
   }
 }
@@ -924,7 +924,6 @@ label {
   margin-bottom: 40px;
 }
 
-
 /* Rfinance Section */
 #rfinance {
   padding: 100px 0;
@@ -968,7 +967,6 @@ label {
 #rfinance .service-desc {
   margin-bottom: 40px;
 }
-
 
 /* Oservices Section */
 #oservices {
