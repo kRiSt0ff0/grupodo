@@ -132,7 +132,11 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
-          <div className="col-md-12">
+        </div>
+      </div>
+      <div id="footer">
+        <div className="container text-center">
+        <div className="col-md-12">
             <div className="row">
               <div className="social">
                 <ul>
@@ -145,10 +149,11 @@ export const Contact = (props) => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div className="container text-center">
+        <img
+            src="../img/logo_bco.svg" // Asegúrate de que esta ruta sea correcta y que el archivo exista.
+            alt="Logo"
+            style={{ width: "100px", marginBottom: "10px" }} // Puedes ajustar el estilo como prefieras.
+          />
           <p>
             &copy; 2024{" "}
             <a href="http://www.grupodo.mx" rel="nofollow">

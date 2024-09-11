@@ -8,7 +8,7 @@ import { Insurance } from "./components/insurance";
 import { Ramos } from "./components/ramos";
 import { Types } from "./components/types";
 import { Rinsurance } from "./components/rinsurance";
-import { Finance } from "./components/finance";
+import { Bail } from "./components/bail";
 import { Oservices } from "./components/oservices";
 import { Rfinance } from "./components/rfinance";
 import JsonData from "./data/data.json";
@@ -37,7 +37,7 @@ const App = () => {
       <Ramos data={landingPageData.Ramos} />
       <Types data={landingPageData.Types} />
       <Rinsurance data={landingPageData.Rinsurance} />
-      <Finance data={landingPageData.Finance} />
+      <Bail data={landingPageData.Bail} />
       <Oservices data={landingPageData.Oservices} />
       <Rfinance data={landingPageData.Rfinance} />
       <Contact data={landingPageData.Contact} />

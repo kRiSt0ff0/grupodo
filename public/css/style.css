@@ -397,22 +397,22 @@ header .intro-text {
 
 /* Finance Section */
 
-#finance {
-  background-image: url("../img/finance.png");
+#bail {
+  background-image: url("../img/bail.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 40vw;
 }
 
-.container.finance {
+.container.bail {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.finance h2 {
+.bail h2 {
   text-align: center;
   color: #fff;
   font-size: 5.5rem;
@@ -422,7 +422,7 @@ header .intro-text {
   justify-content: center;
 }
 
-.finance {
+.bail {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -741,7 +741,7 @@ header .intro-text {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
+  background: #17273C;
   border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
@@ -824,7 +824,7 @@ label {
 }
 /* Footer Section*/
 #footer {
-  background: #f6f6f6;
+  background: #17273C;
   padding: 30px 0;
 }
 #footer p {
@@ -832,10 +832,21 @@ label {
   font-size: 14px;
 }
 #footer a {
-  color: #608dfd;
+  color: #fff;
 }
-#footer a:hover {
-  border-bottom: 2px solid #608dfd;
+
+#footer .social i.fa {
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  padding: 12px 0;
+  border: 2px solid;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#footer .social i.fa:hover {
+  color: #608dfd;
+  background: #fff;
 }
 
 /* Types Section */
@@ -1054,6 +1065,11 @@ label {
   display: flex;
   align-items: center; /* Alinea el texto verticalmente al centro con el ícono */
 }
+
+@media (max-width: 768px) {
+  .oservices-container {
+    align-items: center;
+  }
 /* Slider logos */
 
 /* Archivo CSS Completo */
