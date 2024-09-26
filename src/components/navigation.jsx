@@ -40,7 +40,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#bail" className="page-scroll">
-                Finanzas
+                Fianzas
               </a>
             </li>
             {/*<li>
