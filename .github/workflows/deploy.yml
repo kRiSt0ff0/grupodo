@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # El trabajo se ejecutará en un entorno Ubuntu
+    runs-on: windows-latest  # El trabajo se ejecutará en un entorno Windows
 
     steps:
     - name: Checkout repository
@@ -16,15 +16,17 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1  # Configura Ruby, necesario para Jekyll
       with:
-        ruby-version: 2.7  # Usando Ruby 2.7 (puedes ajustarlo si usas una versión diferente)
+        ruby-version: 2.7  # Usando Ruby 2.7 (ajusta si usas una versión diferente)
+
+    - name: Install Bundler
+      run: |
+        gem install bundler -v 2.4.22  # Instalar Bundler usando RubyGems
 
     - name: Install dependencies
-      run: |
-        gem install bundler -v 2.4.22  # Instalando una versión de Bundler compatible con Ruby 2.7
-        bundle install  # Instala las dependencias necesarias para Jekyll
+      run: bundle install  # Instalar las dependencias definidas en Gemfile
 
     - name: Build the Jekyll site
-      run: bundle exec jekyll build  # Construye el sitio usando Jekyll
+      run: bundle exec jekyll build  # Construir el sitio usando Jekyll
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4  # Usa la acción para desplegar el sitio

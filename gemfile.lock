@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 4.0'  # Versión de Jekyll que estás usando
+gem 'jekyll-theme-minimal', '~> 0.1.0'  # El tema Jekyll que estás usando
