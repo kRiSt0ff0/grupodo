@@ -3,7 +3,7 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages  # Cambia la rama de master a gh-pages para que el flujo se ejecute cuando haya un push a gh-pages
+      - gh-pages  # Ejecuta el flujo cuando haya un push a gh-pages
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        gem install bundler
+        gem install bundler -v 2.4.22  # Instalando una versión de Bundler compatible con Ruby 2.7
         bundle install  # Instala las dependencias necesarias para Jekyll
 
     - name: Build the Jekyll site
