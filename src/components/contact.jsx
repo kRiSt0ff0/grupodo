@@ -1,0 +1,167 @@
+import { useState } from "react";
+import emailjs from "emailjs-com";
+import React from "react";
+
+const initialState = {
+  name: "",
+  email: "",
+  message: "",
+};
+export const Contact = (props) => {
+  const [{ name, email, message }, setState] = useState(initialState);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState((prevState) => ({ ...prevState, [name]: value }));
+  };
+  const clearState = () => setState({ ...initialState });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name, email, message);
+
+    // eslint-disable-next-line no-lone-blocks
+    {
+      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
+    }
+
+    emailjs
+      .sendForm(
+        "service_0e8sop9", // YOUR_SERVICE_ID
+        "template_orzdacg", //YOUR_TEMPLATE_ID
+        e.target,
+        "QVR2WJU8sXcI_9k96" // YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          clearState();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  return (
+    <div>
+      <div id="contact">
+        <div className="container">
+          <div className="col-md-8">
+            <div className="row">
+              <div className="section-title">
+                <h2>Contáctanos</h2>
+                <p>
+                  Si tienes dudas, déjanos tus datos y pronto nos pondremos en
+                  contacto contigo.
+                </p>
+              </div>
+              <form name="sentMessage" validate onSubmit={handleSubmit}>
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="form-control"
+                        placeholder="Nombre"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="form-control"
+                        placeholder="Correo"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    className="form-control"
+                    rows="4"
+                    placeholder="Mensaje"
+                    required
+                    onChange={handleChange}
+                  ></textarea>
+                  <p className="help-block text-danger"></p>
+                </div>
+                <div id="success"></div>
+                <button type="submit" className="btn btn-custom btn-lg">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="col-md-3 col-md-offset-1 contact-info">
+            <div className="contact-item">
+              <h3>Información de contacto</h3>
+              <p>
+                <span>
+                  <i className="fa fa-map-marker"></i> Dirección
+                </span>
+                {props.data ? props.data.address : "loading"}
+              </p>
+            </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-phone"></i> Teléfono
+                </span>{" "}
+                {props.data ? props.data.phone : "loading"}
+              </p>
+            </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-envelope-o"></i> Email
+                </span>{" "}
+                {props.data ? props.data.email : "loading"}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div className="container text-center">
+        <div className="col-md-12">
+            <div className="row">
+              <div className="social">
+                <ul>
+                  <li>
+                    <a href={props.data ? props.data.instagram : "/"}>
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <img
+            src="../img/logo_bco.svg" // Asegúrate de que esta ruta sea correcta y que el archivo exista.
+            alt="Logo"
+            style={{ width: "100px", marginBottom: "10px" }} // Puedes ajustar el estilo como prefieras.
+          />
+          <p>
+            &copy; 2024{" "}
+            <a href="http://www.grupodo.mx" rel="nofollow">
+              Grupo DO
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
