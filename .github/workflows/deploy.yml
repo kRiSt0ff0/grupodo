@@ -3,34 +3,33 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages  # Ejecuta el flujo cuando haya un push a gh-pages
+      - gh-pages
 
 jobs:
   build:
-    runs-on: windows-latest  # El trabajo se ejecutará en un entorno Windows
+    runs-on: ubuntu-latest  # or use windows-latest if on Windows
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2  # Obtiene el código del repositorio
+      uses: actions/checkout@v2
 
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1  # Configura Ruby, necesario para Jekyll
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7  # Usando Ruby 2.7 (ajusta si usas una versión diferente)
+        ruby-version: 2.7  # Using Ruby 2.7
 
     - name: Install Bundler
-      run: |
-        gem install bundler -v 2.4.22  # Instalar Bundler usando RubyGems
+      run: gem install bundler -v 2.4.22  # Install Bundler 2.4.22 for Ruby 2.7
 
     - name: Install dependencies
-      run: bundle install  # Instalar las dependencias definidas en Gemfile
+      run: bundle install
 
     - name: Build the Jekyll site
-      run: bundle exec jekyll build  # Construir el sitio usando Jekyll
+      run: bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4  # Usa la acción para desplegar el sitio
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages  # Despliega en la rama gh-pages
-        folder: _site  # Asegúrate de que _site es la carpeta donde Jekyll genera el sitio
-        token: ${{ secrets.GITHUB_TOKEN }}  # Usa el token de GitHub para autenticación
+        branch: gh-pages
+        folder: _site
+        token: ${{ secrets.GITHUB_TOKEN }}
